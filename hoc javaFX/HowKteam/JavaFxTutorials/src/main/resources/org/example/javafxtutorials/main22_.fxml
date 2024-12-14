@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javafxtutorials.main22_detail.Controller2">
+    <children>
+        <TableView fx:id="tableView" layoutX="-4.0" layoutY="-7.0" prefHeight="800.0" prefWidth="995.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="-4.0" AnchorPane.rightAnchor="289.0" AnchorPane.topAnchor="-7.0">
+            <columns>
+                <TableColumn fx:id="name" prefWidth="75.0" text="name" />
+                <TableColumn fx:id="age" prefWidth="75.0" text="age" />
+                <TableColumn fx:id="address" prefWidth="75.0" text="address" />
+                <TableColumn fx:id="gmail" prefWidth="75.0" text="gmail" />
+                <TableColumn fx:id="phone" prefWidth="75.0" text="phone" />
+                <TableColumn fx:id="sex" prefWidth="75.0" text="sex" />
+                <TableColumn fx:id="date" prefWidth="75.0" text="datebirth" />
+            </columns>
+        </TableView>
+        <Label fx:id="Name" layoutX="1015.0" layoutY="87.0" text="Name" />
+        <Label fx:id="Age" layoutX="1026.0" layoutY="160.0" text="Age" />
+        <Label fx:id="Address" layoutX="1012.0" layoutY="218.0" text="Address" />
+        <Label fx:id="Gmail" layoutX="1021.0" layoutY="298.0" text="Gmail" />
+        <Label fx:id="Datebirth" layoutX="1006.0" layoutY="498.0" text="Datebirth" />
+        <Label fx:id="Sex" layoutX="1026.0" layoutY="447.0" text="Sex" />
+        <Label fx:id="Phone" layoutX="1019.0" layoutY="362.0" text="Phone" />
+        <TextField fx:id="personAge" layoutX="1110.0" layoutY="143.0" />
+        <TextField fx:id="personAddrress" layoutX="1110.0" layoutY="214.0" />
+        <TextField fx:id="personGmail" layoutX="1110.0" layoutY="281.0" />
+        <TextField fx:id="personPhone" layoutX="1104.0" layoutY="349.0" />
+        <TextField fx:id="personSex" layoutX="1101.0" layoutY="434.0" />
+        <TextField fx:id="personDateBirth" layoutX="1101.0" layoutY="494.0" />
+        <Button fx:id="add" layoutX="1021.0" layoutY="594.0" mnemonicParsing="false" onAction="#add" text="add" />
+        <Button fx:id="delete" layoutX="1110.0" layoutY="594.0" mnemonicParsing="false" onAction="#delete" text="delete" />
+        <TextField fx:id="personName" layoutX="1103.0" layoutY="84.0" promptText="enter your name" />
+        <Button fx:id="detail" layoutX="1201.0" layoutY="597.0" mnemonicParsing="false" onAction="#changeSceneDetail" text="detail" />
+    </children>
+</AnchorPane>
